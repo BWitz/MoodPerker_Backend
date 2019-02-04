@@ -1,0 +1,2 @@
+class Happynew < ApplicationRecord
+end

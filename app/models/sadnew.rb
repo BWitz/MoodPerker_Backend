@@ -1,0 +1,2 @@
+class Sadnew < ApplicationRecord
+end
