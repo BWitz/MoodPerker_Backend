@@ -1,0 +1,2 @@
+class Happyquote < ApplicationRecord
+end

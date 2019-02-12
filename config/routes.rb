@@ -10,11 +10,21 @@ Rails.application.routes.draw do
 
         resources :contentimgs, only: [:index, :create, :update, :destroy]
 
+        resources :boredimgs, only: [:index, :create, :update, :destroy]
+
         resources :happynews, only: [:index, :create, :update, :destroy]
 
         resources :sadnews, only: [:index, :create, :update, :destroy]
 
         resources :contentnews, only: [:index, :create, :update, :destroy]
+
+        resources :borednews, only: [:index, :create, :update, :destroy]
+
+        resources :happyquotes, only: [:index, :create, :update, :destroy]
+
+        resources :sadquotes, only: [:index, :create, :update, :destroy]
+
+        resources :boredquotes, only: [:index, :create, :update, :destroy]
       end
     end
 end

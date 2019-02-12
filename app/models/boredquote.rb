@@ -1,0 +1,2 @@
+class Boredquote < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Borednew < ApplicationRecord
+end

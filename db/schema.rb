@@ -10,10 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_03_063440) do
+ActiveRecord::Schema.define(version: 2019_02_11_170220) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "boredimgs", force: :cascade do |t|
+    t.string "img_url"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "borednews", force: :cascade do |t|
+    t.string "news_src"
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "boredquotes", force: :cascade do |t|
+    t.string "author"
+    t.string "quote"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "contentimgs", force: :cascade do |t|
     t.string "img_url"
@@ -45,6 +67,13 @@ ActiveRecord::Schema.define(version: 2019_02_03_063440) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "happyquotes", force: :cascade do |t|
+    t.string "author"
+    t.string "quote"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sadimgs", force: :cascade do |t|
     t.string "img_url"
     t.integer "user_id"
@@ -56,6 +85,13 @@ ActiveRecord::Schema.define(version: 2019_02_03_063440) do
     t.string "news_src"
     t.string "title"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sadquotes", force: :cascade do |t|
+    t.string "author"
+    t.string "quote"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

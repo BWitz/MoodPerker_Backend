@@ -1,0 +1,2 @@
+class Sadquote < ApplicationRecord
+end
