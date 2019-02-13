@@ -28,7 +28,7 @@ class Api::V1::BorednewsController < ApplicationController
  private
 
  def borednew_params
-   params.require(:borednew).permit(:news_src, :title, :description)
+   params.require(:borednews).permit(:news_src, :title, :description)
  end
 
  def find_borednew

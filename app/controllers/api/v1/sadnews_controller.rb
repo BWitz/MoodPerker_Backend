@@ -28,7 +28,7 @@ class Api::V1::SadnewsController < ApplicationController
  private
 
  def sadnew_params
-   params.require(:sadnew).permit(:news_src, :title, :description)
+   params.require(:sadnews).permit(:news_src, :title, :description)
  end
 
  def find_sadnew

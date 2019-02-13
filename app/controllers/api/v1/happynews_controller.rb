@@ -28,7 +28,7 @@ class Api::V1::HappynewsController < ApplicationController
  private
 
  def happynew_params
-   params.require(:happynew).permit(:img_url, :user_id)
+   params.require(:happynews).permit(:news_src, :title, :description)
  end
 
  def find_happynew
